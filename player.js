@@ -58,7 +58,7 @@ const setMusic = (i) => {
     musicDuration.innerHTML = formaTime(music.duration);
   });
 
-  // updateTextColor(song.cover);
+
 };
 
 setMusic(0);
@@ -129,26 +129,4 @@ const nextMusic = () => {
   pauseButton.alt = "Pause";
 };
 
-// Function to update text color based on cover image brightness//
-// const updateTextColor = (coverUrl) => {
-//   const colorThief = new colorThief();
-//   const albumImage = new Image();
-//   albumImage.crossOrigin = "Anonymous"; // needed if images are loaded from external URLs
 
-//   albumImage.src = coverUrl;
-
-//   albumImage.onload = () => {
-//     const dominantColor = colorThief.getColor(albumImage);
-//     const [r, g, b] = dominantColor;
-
-//     const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-
-//     if (brightness < 128) {
-//       document.querySelector(".current-time").style.color = "#FFFFFF";
-//       document.querySelector(".duration").style.color = "#FFFFFF";
-//     } else {
-//       document.querySelector(".current-time").style.color = "#000000";
-//       document.querySelector(".duration").style.color = "#000000";
-//     }
-//   };
-// };
