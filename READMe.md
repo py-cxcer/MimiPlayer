@@ -18,7 +18,7 @@ A responsive, stylish music player built with HTML, CSS, and JavaScript.
 
 ## 🚀 Demo
 Check the live version here:  
-👉 [Live Demo](https://py-cxcer.github.io/MimiPlayer/)
+👉 [Live Demo](https://mimiplayer.netlify.app/)
 
 ---
 
