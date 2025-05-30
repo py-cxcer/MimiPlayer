@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    
+    <audio src="" id="music-player"></audio>
+    
+    <div class="music-container">
+      
+      <div class="Title">
+        <h1 class="music-name">Song</h1>
+        <p class="artist-name">Artist</p>
+      </div>
+      <!-- <h1 class="music-name">Song</h1>
+      <p class="artist-name">Artist</p> -->
+
+      <div class="song-card">
+        <div class="album-cover"></div>
+      </div>
+      
+      <div class="song-slide">
+        <span class="current-time">0:00</span>
+        <input type="range" value="0" class="progress-bar" />
+        <span class="duration">0:00</span>
+      </div>
+      
+      <div class="Control-bar">
+        <div class="Controls">
+          <button class="prev-button">
+            <img src="/assets/previous.svg" alt="Previous" />
+          <button class="play-button">
+            <img src="/assets/play.svg" alt="Play" />
+          <button class="next-button">
+            <img src="/assets/next.svg" alt="Next" />
+      </div>
+
+      <div class="Volume-control">
+          <input type="range" min="0" max="100" value="50" class="volume-slider" />
+      </div>   
+      
+      
+    </div>
+    
+    <script src="data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script src="player.js"></script>
+    
+
+  </body>
+</html>
