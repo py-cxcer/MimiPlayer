@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(132, 169, 140, 0.81) 17.79%,
+    rgba(52, 67, 56, 0.81) 100%
+  );
+  font-family: "Poppins", sans-serif;
+}
+
+.music-container {
+  width: 600px;
+  height: 885px;
+  border-radius: 20px;
+  background: rgba(202, 210, 197, 0.7);
+  box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  overflow: hidden;
+  color: #2f3e46;
+}
+
+.Title {
+  position: relative;
+  margin: 15px auto;
+  width: 425px;
+  height: 85px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 3px solid #bce4ba;
+  background: rgba(202, 210, 197, 0.7);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.music-name,
+.artist-name {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 7px;
+}
+
+.music-name {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.artist-name {
+  font-size: 20px;
+  margin-top: -10px;
+  color: rgba(53, 79, 82, 0.9);
+  font-weight: strong;
+}
+
+.song-card {
+  position: relative;
+  display: block;
+  margin: 30px auto;
+  /* 510px */
+  width: 440px;
+  height: 460px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 3px solid #bce4ba;
+  background: #cad2c5;
+  box-shadow: 0px 4px 4px 0px rgba(175, 80, 80, 0.25);
+}
+
+.album-cover {
+  position: relative;
+  display: block;
+  width: 350px;
+  height: 350px;
+  flex-shrink: 0;
+  margin: 35px auto;
+  background-image: url(/assets/19C.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.171);
+}
+
+.song-slide {
+  /* //350, 400px, 450px// */
+  width: 370px;
+  position: relative;
+  margin-top: -70px;
+  /* //45px, 75px, 95px// */
+  margin-left: 85px;
+  height: 30px;
+}
+
+.progress-bar {
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  border-radius: 50px;
+  background: linear-gradient(
+    270deg,
+    rgba(53, 79, 82, 0.9) 55.77%,
+    rgba(119, 177, 184, 0.9) 100%
+  );
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 19px;
+  background: #2f3e46;
+  box-shadow: 0 2px 6px rgba(25, 29, 19, 0.4);
+}
+
+.current-time,
+.duration {
+  font-size: 14px;
+  transition: color 0.3s ease;
+  color: rgba(53, 79, 82, 0.9);
+}
+
+.current-time {
+  position: absolute;
+  left: 0;
+  margin-top: -13px;
+  margin-right: 5px;
+}
+.duration {
+  position: absolute;
+  right: 0;
+  margin-top: -13px;
+  margin-left: 5px;
+}
+
+.Control-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center the Controls container */
+  align-items: center;
+  width: 100%;
+  margin: 60px auto; /* space from top or wherever you want */
+  margin-top: 35px;
+  width: 510px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 3px solid #bce4ba;
+  background: rgba(202, 210, 197, 0.7);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Controls {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between buttons */
+}
+
+.Controls button {
+  width: 90px;
+  height: 90px;
+  margin-top: -15px; /* adjust as needed */
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.Controls button img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.play-button {
+  width: 60px; /* make play button slightly bigger */
+  height: 60px;
+}
+
+.Volume-control {
+  position: fixed;
+  width: 300px;
+  height: 60px;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+}
+
+.volume-slider {
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 43px;
+  border: 1px solid #000;
+  background: linear-gradient(
+    270deg,
+    rgba(53, 79, 82, 0.9) 55.77%,
+    rgba(119, 177, 184, 0.9) 100%
+  );
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 9px;
+  background: #00000054;
+  box-shadow: 0 2px 6px rgba(25, 29, 19, 0.4);
+}
