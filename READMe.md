@@ -23,7 +23,7 @@ Check the live version here:
 ---
 
 ## 📸 Screenshots
-![Screenshot 1](./assets/MimiPlayer.png)
+![](./assets/MimiPlayer.png)
 
 ---
 
