@@ -18,7 +18,7 @@ A responsive, stylish music player built with HTML, CSS, and JavaScript.
 
 ## 🚀 Demo
 Check the live version here:  
-👉 [Live Demo](https://yourusername.github.io/cute-music-player)
+👉 [Live Demo](https://py-cxcer.github.io/MimiPlayer)
 
 ---
 
